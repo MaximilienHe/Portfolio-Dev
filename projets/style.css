@@ -1,0 +1,64 @@
+h1 {
+    font-size: 40px;
+    margin: 5vh 0;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20vw;
+}
+
+.projectCard {
+    width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    gap: 40px;
+    margin-bottom: 5vh;
+    transition: all 0.3s ease-in-out;
+} 
+
+.projectCard img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.linkProject {
+    text-decoration: none;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.languages img {
+    height: 40px;
+    width: auto;
+    border-radius: 0;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-right: 50px;
+}
+
+.projectContent h3 {
+    font-size: 30px;
+    margin: 0;
+    margin-top: 10px;
+}

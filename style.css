@@ -169,17 +169,17 @@ a:visited {
 /* Project sections */
 
 .projets {
-    margin: 10vh 0;
-    align-items: center;
+    margin: 10vh 10vw;
     display: flex;
-    flex: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 40px;
+    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
     overflow: visible;
     padding: 0;
     position: relative;
+    max-width: 80vw;
 }
 
 .card img {

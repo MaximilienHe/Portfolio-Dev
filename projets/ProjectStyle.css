@@ -22,3 +22,10 @@ ul {
 .content h2 {
     font-size: 28px;
 }
+
+.sources {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 150px;
+}

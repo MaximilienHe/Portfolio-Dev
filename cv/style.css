@@ -129,3 +129,7 @@ h5 {
     align-items: center;
     justify-content: center;
 }
+
+iframe {
+    height: 40vh;
+}

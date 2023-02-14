@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Product Sans/stylesheet.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../ProjectStyle.css">
+    <title>Maximilien Herr - ASCII Art</title>
+</head>
+
+<body>
+    <section class="header">
+        <a href="https://maximilienherr.fr">
+            <p>Maximilien Herr</p>
+        </a>
+        <div>
+            <a href="../../contact/">Contact</a>
+            <a href="../../projets">Projets</a>
+            <a href="../../cv" class="button">MON CV</a>
+        </div>
+    </section>
+
+    <section class="content">
+        <h1>Développement Logiciel - ASCII Art
+        </h1>
+        <p>Rapidement, le contexte de ce projet est de réaliser un logiciel capable d'appliquer un traitement sur une
+            image pour convertir chaque pixel en caractères de la table ASCII. On convertit donc chaque composant de
+            l'image en caractères, comme "W", "w", "l" ...
+        </p>
+        <h2>Caractéristiques techniques du projet</h2>
+        <h3>Langages / technologies utilisés</h3>
+        <p>CCe logiciel de traitement d'image se fait à partir d'un simple code en C++. Pour gérer les problèmes qui
+            peuvent arriver dans le traitement d'images, on a utilisé Visual Studio 2019, qui nous donne accès à un
+            débuggeur très puissant. Ainsi, on a pu identifié l'état de nos variables, notamment pour savoir si l'on
+            dépasse la taille de l'image, si l'on dépasse des valeurs …
+        </p>
+        <h3>Combien de temps, qui et quoi ?</h3>
+        <p>Ce projet s'inscrit dans le cadre de ma formation en BUT Informatique Graphique, à travers une SAE (Situation
+            d'Apprentissage et d'Évaluation). Il a donc durée une douzaine d'heures, comprenant le temps de
+            développement, ainsi que le temps de rendu. J'étais en collaboration avec <a
+                href="https://www.linkedin.com/in/florian-mure-9b335422b/">Florian Mure</a>.
+        </p>
+        <p>Après avoir passé un premier temps sur du code du projet, je suis parti sur la création du compte-rendu de
+            celui-ci, impliquant la bonne compréhension du projet.
+        </p>
+        <h2>Détails du projet</h2>
+        <p>Ce logiciel n'est pas particulièrement ambitieux, mais c'était le premier travail en groupe à réaliser au
+            sein de la formation. Pour le réaliser complètement à 2, nous avions utilisé GitHub, pour la première fois
+            dans mon cas. Cela m'a permis de me former brièvement sur l'outil, et apprendre la collaboration à travers
+            Git comme outil de partage de code.
+        </p>
+        <p>En terme de code à proprement parler, celui-ci répond aux exigences érigées en début de projet dans le sujet.
+            Nous étions guidé dans sa réalisation (rappel : premier projet "sérieux"), pour autant, nous avons fini dans
+            les délais, même en avance, avec un code qui fonctionnait dans tous les cas. En effet, comme nous traitons
+            une image, il était possible que le traitement ne fonctionne pas selon certaines tailles d'images, selon
+            certaines configurations … Notre projet final est fonctionnel dans tous ces cas-là.
+        </p>
+        <p>Pour préciser un peu le déroulement de ce projet, il y avait 5 versions, que nous devions réaliser
+            chronologiquement, avec des indications au fur et à mesure :
+        </p>
+        <h3>Version 1
+        </h3>
+        <ul>
+            <li>Récupération d’images en PGM
+            </li>
+            <li>Traitement des informations du fichier image (entête et corps)
+            </li>
+            <li>Conversion des informations du corps du fichier en ASCII Art
+            </li>
+        </ul>
+        <p>On doit d’abord utiliser un utilitaire fourni, pour transformer des images type PNG ou JPEG en PGM.
+        </p>
+        <p>Une fois ces images transformées, l’entête contient 2 informations importantes sur le fichier, sa largeur et
+            sa hauteur. Ensuite, le corps du fichier, est composé de chaque pixel, codé sur un octet. Une fois la valeur
+            convertie en ASCII (selon la palette fournie), on peut l’afficher dans la console.
+        </p>
+        <h3>Version 2</h3>
+        <ul>
+            <li>Création d'un fichier texte
+            </li>
+            <li>Exportation de l'ASCII Art dans le fichier texte crée
+            </li>
+        </ul>
+        <p>Cette partie est beaucoup plus succincte, il suffit de créer le fichier, que l’on pourra nommer comme on le
+            souhaite. Puis, au lieu d’afficher dans la console, on exporte les valeurs dans le fichier texte créé.
+        </p>
+        <h3>Version 3</h3>
+        <ul>
+            <li>Lecture de fichiers textes "palette"
+            </li>
+            <li>Changement de l'affichage de l'ASCII Art selon la palette traitée
+            </li>
+        </ul>
+        <p>On doit donc traiter les données des palettes, en ouvrant le fichier, qui présentent un nombre « aléatoire »
+            de caractères. Du fait du caractère aléatoire du nombre de caractères, on doit adapter le programme pour
+            afficher avec les bons intervalles, les caractères ASCII de la palette.
+        </p>
+        <h3>Version 4</h3>
+        <ul>
+            <li>Entrée d'arguments pour une exécution en invite de commande
+            </li>
+            <li>Affichage d'un help
+            </li>
+            <li>Changement des arguments pour :
+                <ul>
+                    <li>Fichier d'entrée
+                    </li>
+                    <li>Fichier de sortie
+                    </li>
+                    <li>Fichier de palette
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>On doit donc utiliser des arguments en entrée du programme, qui vont nous permettre d’afficher une aide, et
+            de changer les paramètres du programme Les arguments sont donc l’aide, et les paramètres du programme, à
+            savoir le chemin du fichier en entrée, du fichier de sortie, et du fichier palette.
+        </p>
+        <h3>Version 5</h3>
+        <ul>
+            <li>Ajout de deux arguments width et height
+            </li>
+            <li>Calcul du facteur de diminution
+            </li>
+            <li>Calcul de la moyenne de valeurs sur une zone et envoie des valeurs dans un tableau
+            </li>
+        </ul>
+        <p>On rajoute désormais deux arguments width et height qui vont correspondre à la taille maximale que l’on veut
+            pour notre fichier. Seulement, on doit conserver une image propre, c’est donc le facteur de diminution
+            majoritaire qui va être conservé.
+        </p>
+        <p>Ce facteur de diminution sera donc la valeur maximale du rapport entre la largeur ou la hauteur de l’image et
+            width ou height. A partir de là, on doit parcourir de nouveau le tableau des données, en ne conservant qu’un
+            pixel pour une zone du facteur (exemple, pour un facteur de diminution de 3, on remplace 9 pixels par 1).
+        </p>
+        <p>Et à la fin, ça nous donne des petits chats tout mignon en caractères de la table ASCII !
+        </p>
+        <img src="../../Images/ascii-art_result_cats.png" alt="Résultat du projet en version 5">
+        <h2>Auto-critique du résultat
+        </h2>
+        <p>Etant donné que nous sommes arrivés à la fin des 5 versions du projet, cette critique sera rapide. Nous avons
+            bien travaillé, avec le respect du temps imparti. D'autant plus que nous avions utilisé GitHub (donc Git)
+            pour le partage de code, en se formant brièvement sur l'outil. Cela nous a permis d'avancer vraiment plus
+            vite.
+        </p>
+    </section>
+
+    <section class="footer">
+        <p>© Maximilien Herr | 2023</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/maximilien-herr/">
+                <p>LinkedIn</p>
+            </a>
+            <a href="https://github.com/MaximilienHe">
+                <p>GitHub</p>
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>

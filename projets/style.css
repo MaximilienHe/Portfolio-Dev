@@ -3,6 +3,13 @@ h1 {
     margin: 5vh 0;
 }
 
+h4 {
+    font-family: ProductSans !important;
+    font-size: 24px;
+    font-weight: bold;
+    color: black !important;
+}
+
 .projects {
     display: flex;
     flex-direction: column;

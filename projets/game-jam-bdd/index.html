@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../Product Sans/stylesheet.css">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../ProjectStyle.css">
-    <title>Maximilien Herr - DroidSoft App</title>
+    <title>Maximilien Herr - BDD Game Jam</title>
 </head>
 
 <body>
@@ -24,156 +24,49 @@
     </section>
 
     <section class="content">
-        <h1>Application Mobile - DroidSoft App</h1>
-        <p>A l'occasion du projet tutoré de 2e année, j'ai entrepris le développement d'une application mobile pour
-            DroidSoft. DroidSoft est un média en ligne (sous WordPress), spécialisé dans les technologies autour du
-            monde d'Android. Ce sont notamment les smartphones, les tablettes, les écouteurs, les montres connectées …
-            Ainsi, dédié à ces technologies, il était pertinent d'investir un support mobile intégré, et pas simplement
-            la version mobile du site. C'est donc ça la genèse du projet, mais comment l'avons-nous fait ? ⤵️
+        <h1>Développement Web - Création d'une base de données pour Game Jam</h1>
+        <p>Le contexte était de proposer une base de données pour des administrateurs d'une Game Jam. Une Game Jam est
+            un évènement de courte durée, 24, 48 voire 72h, donc un week-end bien souvent, où plusieurs équipes se
+            réunissent pour créer un jeu-vidéo en un temps très court. Ce sont des développeurs, des graphistes, des
+            level designers ...
         </p>
-        <h2>Caractéristiques techniques du projet</h2>
-        <h3>Langages / technologies utilisés</h3>
-        <p>Ce projet étant assez important, plusieurs aspects sont travaillés. Il y a d'abord l'application en
-            elle-même, qui utilise deux technologies :</p>
-        <ul>
-            <li><b>Android Studio</b></li>
-            <li><b>Kotlin</b></li>
-        </ul>
-        <p>Le choix de Kotlin se justifie par une demande plus importante, et une modernité contrairement à Java.</p>
-        <p>D'autre part, nous avons une partie avec création d'API, pour récupérer et créer une base de données de
-            smartphones. Cette API se base sur ces technologies :
+        <p>
+            Il nous fallait donc composer, conceptualiser et créer une base de données, qui permet d'ajouter des
+            participants, des jurys. La gestion des équipes et de la notation doit aussi être géré dans la base de
+            données.
         </p>
-        <ul>
-            <li><b>Javascript</b> (scrapping avec Cheerio)</li>
-            <li><b>Express.js</b> (Récupération des données scrappées par l'API, pour l'enregistrement dans la BDD)</li>
-            <li><b>MySQL</b> pour la gestion de la BDD</li>
-        </ul>
-        <p>Pour expliquer brièvement le cheminement des données, elles sont scrappées et une création de route se fait
-            selon les données scrappées. On récupère ensuite les données scrappées pour les remplir en base de données,
-            et une autre API ouvre des endpoints pour récupérer les données enregistrées dans la base de données.</p>
-        <h3>Combien de temps, qui et quoi ?</h3>
-        <p>Ce projet est le projet tutoré réalisé en 2e année, il s'est donc étalé de novembre 2022 jusqu'à fin mars
-            2023. En temps total alloué, on se place sur 150h environ par personne.
+        <p>
+            On a également dû intégrer des données dans la base de données conceptualisée, et essayer nos jeux de
+            données à travers des requêtes en MySQL, pour par exemple, connaître la meilleure équipe sur une période
+            donnée.
         </p>
-        <p>Pour ce projet, nous étions 4 à le réaliser :
-            <a href="https://www.linkedin.com/in/lucas-chalmandrier/" target="_blank">Lucas Chalmandrier</a>,
-            <a href="https://www.linkedin.com/in/eliot-bianchin/" target="_blank">Eliot Bianchin</a>,
-            <a href="https://www.linkedin.com/in/quentin-detr%C3%A9/" target="_blank"> Quentin Detré</a> et moi-même.
+        <h2>Outils et logiciels utilisés</h2>
+        <p>Nous étions de nouveau en groupe de 5 élèves, avec des tâches partagées. La conception de la base de données
+            étant la base, il était nécessaire de la travailler en groupe afin de partir sur une base solide. Ainsi,
+            nous avons utilisé Miro, qui permet de partager un tableau blanc, sur lequel on rajoutait les éléments de la
+            base de données.
         </p>
-        <p>Etant à l'origine partagée avec les responsables de DroidSoft de ce projet, j'étais en charge des relations
-            avec le média. Pour bien entreprendre le projet, cela me tenait à cœur de m'occuper de la gestion de
-            l'équipe du projet, ce que j'ai donc fais. Et en partie technique, je me suis concentré sur le développement
-            de l'application dans un premier temps, puis je suis parti sur la création de l'API pour la base de données.
+        <p>Egalement, une activité documentaire était à faire pour chercher l'importance des données en entreprise. Pour
+            la partie base de données en elle-même, avec l'insertion de données, on a utilisé XAMPP, avec PHPMyAdmin.
         </p>
-        <h2>Détails du projet</h2>
-        <p>Ce projet se concentre donc autour de 4 piliers majeurs. Il y a d'une part toute une recherche sur le design,
-            pour intégrer au mieux les notions d'UI et d'UX pour rendre l'application ergonome. Aussi, il était
-            important de maîtriser la communication avec des APIs, en particulier celle de WordPress, qui nous permet la
-            récupération des articles, des commentaires … Le développement de l'application est aussi au centre du
-            projet, avec des technologies nouvelles (Android Studio et Kotlin) au début du projet. C'était un pari plus
-            risqué, mais réussi. Et enfin, la création de l'API et de la base de données est le 4e pilier de ce projet.
-        </p>
-        <h3>Design / UI & UX</h3>
-        <p>Je n'ai pas crée directement le design, pour cette partie là, j'étais en charge de faire des retours aux
-            clients sur ce qui était fait, pour adapter en conséquence le design. Connaissant l'ambition du projet, j'ai
-            par ailleurs aidé la personne en charge, afin qu'elle sache quoi faire, et lui donner les éléments de la
-            charte graphique du site.</p>
-        <img src="../../Images/design.webp" alt="design DroidSoft App">
-        <h3>La petite touche Green IT & Numérique Responsable
-        </h3>
-        <p>Pour axer notre projet autour de la sensibilisation au Green IT que l'on a en cours, nous avons placé le
-            design au centre de cette réflexion Numérique Responsable.
-        </p>
-        <p>Un peu de contexte d'abord. Sur le marché des smartphones, une technologie d'écran domine le marché, à savoir
-            l'OLED. Cette technologie d'affiche fait en sorte que chaque pixel de l'écran s'allume ou s'éteigne
-            individuellement. Ainsi, dans le cas de l'affichage d'un pixel noir, le pixel associé s'éteindra.
-        </p>
-        <p>C'est pourquoi, nous avons opté pour 2 designs, un "Light Mode" et un "Dark Mode". Le Dark Mode peut utiliser
-            des teintes de couleurs sombres, ou simplement un fond noir. Et si le design est justement réellement noir,
-            et non pas une teinte colorée, cela permet d'éteindre les pixels affichés, augmente le contraste d'ailleurs.
-            Le profit est donc à la fois environnemental, mais concerne aussi l'accessibilité.
-        </p>
-        <img src="../../Images/design OLED.webp" alt="Oled design vs Not Oled design">
-        <h3>Communication avec l'API WordPress
-        </h3>
-        <p>Au sein de l'application, il a fallu intégrer la communication avec l'API de WordPress, qui est très
-            exhaustive et complète. C'était l'avantage, nous avions une base solide pour interagir avec les données du
-            site.
-        </p>
-        <h3>Développement de l'application
-        </h3>
-        <p>Comme précisé plus haut, on est parti sur un développement en Kotlin, sous Android Studio. Dans ce
-            développement, 2 choses étaient à réaliser, la partie fonctionnelle, et la partie graphique de
-            l'application. Sur l'ensemble de l'application, je me suis placé sur les 2 aspects de celle-ci.
-        </p>
-        <p>L'intérêt de ce projet était d'expérimenter un aspect de la formation que nous n'avions pas vu, le
-            développement d'applications. Par ailleurs, en se plaçant sur des technologies plus récentes et plus
-            demandées, cela permet d'avoir un rendu presque professionnel.
-        </p>
-        <p>Nous avons aussi profité de ce projet pour travailler en mode "entreprise". Cela passe par l'utilisation de
-            Git (GitHub) pour le partage de code, avec une rigueur dans son usage. Le partage de tâche s'est fait selon
-            une "spécialité", design, app ou création de l'API / BDD.
-        </p>
-        <h3>Création d'API et BDD
-        </h3>
-        <p>Comme précisé plus haut aussi, la création de cette API se fait en javascript pour le scraping, mais aussi
-            pour l'interaction avec la base de données. Celle-ci est d'ailleurs gérée en MySQL, avec une conception
-            réfléchie pour améliorer la rapidité. Le scraping récupère des données sous un format initial, se basant sur
-            un triplet de chemins d'accès.
-        </p>
-        <img src="../../Images/endpoints.webp" alt="endpoints">
-        <p>On a le /brands qui nous donne les marques, le /brand/{url} qui nous donne tous les produits d'une marque, et
-            le /device/{url} qui nous donne les détails techniques de ce téléphone. Un premier script était en charge de
-            récupérer ces données, et de les stocker dans une base de données. Ensuite, tous les jours, un second script
-            doit comparer pour trouver les nouvelles données, et les enregistrer.
-        </p>
-        <h2>En résumé</h2>
-        <p>Ce projet a donc été une bonne porte ouverte sur le travail sous forme de projet. Nous avons à la fois
-            travaillé en groupe, à travers des outils professionnels (Git, Trello ...), mais aussi selon un cahier des
-            charges, et des tâches définies. Chacun travaillant sur un pannel de tâches défini, c'est plus favorable à
-            une amélioration de ses capacités dans ce domaine. Enfin, sur des projets en entreprise, il est tout à fait
-            possible de ne pas connaître les technologies utilisées, c'est pourquoi, nous sommes partis dans l'inconnu,
-            avec Android Studio et Kotlin, que nous n'avions jamais travaillé ou vu auparavant.</p>
-        <h2>Auto-critique du résultat
+        <h2>Compétences acquises
         </h2>
-        <p>Pour parler un peu plus du résultat du projet, il est nécessaire d'inclure les retours que l'on a eu de la
-            part de DroidSoft, qui commanditait le projet. Si nous reprenons les éléments dans l'ordre, nous avons
-            commencé à partir du design. Celui-ci a donc été réalisé au jour le jour, avec des retours au jour le jour
-            également. L'objectif était clair, ne pas aller droit dans le mur, et se baser sur les envies et les
-            appréciations de l'équipe de DroidSoft. Cette partie communication était aisée, simplement des messages sur
-            Slack avec les éléments de design produits, en demandant de valider ou non.
+        <p>La conception de base de données, les requêtes, et l'insertion de données avaient déjà été travaillées en
+            cours. Toutefois, le niveau de difficulté était plus important, et le travail était à réaliser de A à Z ici.
         </p>
-        <p>Pour la partie développement de l'application, bien que nous partions sur une base solide, sur laquelle, nous
-            devions ajouter plein d'éléments, tout en se formant, ça a manqué de rapidité. Nous aurions pu réaliser plus
-            de fonctionnalité, avec des deadlines plus courtes. Mais dans l'ensemble, à la date première date butoir,
-            nous avions une application fonctionnelle, et qui répondait aux critères minimaux d'une application de ce
-            type (média player pour Android).
+        <p>
+            C'est en somme, un travail plus poussé, et une polyvalence plus grande dans la gestion d'une base de
+            données, de la conception à l'utilisation qui était demandé, et que l'on a réalisé.
         </p>
-        <p>Enfin, la partie création de l'API des smartphones (avec Base de Données), étant donné que cela s'étalait
-            aussi sur mon projet de stage, j'ai repris en main cette partie là sur le 3e sprint. Etant donné qu'il y
-            avait beaucoup d'intermédiaires (le site que l'on scrappe, une API tampon …) cela impliquait des
-            contre-temps. Mais dans l'ensemble, le résultat est bon. Comme je viens de le dire, c'est lié à mon stage,
-            donc j'en reparlerai dans le projet "Stage" qui arrivera à la fin de celui-ci sur ce site !
-        </p>
-
         <div class="logos">
-            <img src="../../Images/Logos/Dev Logiciels/kotlin.png" alt="kotlin" class="logo">
-            <img src="../../Images/Logos/Dev Logiciels/AndroidStudio.png" alt="AndroidStudio" class="logo">
-            <img src="../../Images/Logos/Dev Web/JavaScript.png" alt="JavaScript" class="logo">
+            <img src="../../Images/Logos/Dev Web/XAMPP.png" alt="XAMPP logo" class="logo">
+            <img src="../../Images/Logos/Dev Web/MySQL.png" alt="MySQL logo" class="logo">
             <img src="../../Images/Logos/git.png" alt="Git" class="logo">
         </div>
         <h2>Sources du projet</h2>
         <div class="sources">
-            <a href="https://github.com/MaximilienHe/DroidApp" target="_blank">
-                <p>Sources de l'application</p>
-                <img src="../../Images/Logos/logo-sources-projet.png" alt="Sources du projet" class="logo">
-            </a>
-            <a href="https://github.com/MaximilienHe/DroidApp" target="_blank">
-                <p>Sources de l'API de scrapping</p>
-                <img src="../../Images/Logos/logo-sources-projet.png" alt="Sources du projet" class="logo">
-            </a>
-            <a href="https://github.com/MaximilienHe/Phone-API-BDD" target="_blank">
-                <p>Sources des scripts liés à l'API base de données</p>
+            <a href="https://github.com/MaximilienHe/Creation-de-BDD-Game-Jam" target="_blank">
+                <p>Sources du projet</p>
                 <img src="../../Images/Logos/logo-sources-projet.png" alt="Sources du projet" class="logo">
             </a>
         </div>

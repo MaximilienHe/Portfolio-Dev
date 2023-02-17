@@ -4,6 +4,15 @@ ul {
     font-weight: normal;
     color: #000000;
 }
+
+
+h4 {
+    font-family: ProductSans !important;
+    font-size: 18px;
+    font-weight: bold;
+    color: black !important;
+}
+
 .content {
     display: flex;
     flex-direction: column;

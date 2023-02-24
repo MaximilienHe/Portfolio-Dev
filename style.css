@@ -58,7 +58,7 @@ p {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: normal;
-    color: #888888;
+    color: #000000;
 }
 
 a:visited {
@@ -75,6 +75,9 @@ a:visited {
     padding: 10px 20px;
     color: white !important;
     font-family: Montserrat;
+
+    font-size: 100%;
+    transition: 0.5s;
 }
 
 .button:hover {
@@ -221,6 +224,9 @@ a:visited {
 }
 
 .card {
+    
+    transform: scale(1.0);
+    transition: 0.5s;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0.707995px 0.707995px -0.625px, rgba(0, 0, 0, 0.145) 0px 1.80969px 1.80969px -1.25px, rgba(0, 0, 0, 0.137) 0px 3.62052px 3.62052px -1.875px, rgba(0, 0, 0, 0.125) 0px 6.87063px 6.87063px -2.5px, rgba(0, 0, 0, 0.106) 0px 13.6444px 13.6444px -3.125px, rgba(0, 0, 0, 0.05) 0px 30px 30px -3.75px;
 }
@@ -347,6 +353,11 @@ a:visited {
     justify-content: center;
     gap: 20px;
     margin-top: 2vh;
+}
+
+.singleArticle {
+    transform: scale(1.0);
+    transition: 0.5s;
 }
 
 .singleArticle:hover {

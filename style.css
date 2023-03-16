@@ -369,3 +369,7 @@ a:visited {
     transform: scale(1.05);
     transition: 0.5s;
 }
+
+.footer p {
+    color: white !important;
+}
